@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Николай Бирюков](https://up.htmlacademy.ru/htmlcss/21/user/768557).
-* Наставник: `Неизвестно`.
+* Наставник: [Руслан Турсунов].(https://htmlacademy.ru/profile/justerror)
 
 ---
 
