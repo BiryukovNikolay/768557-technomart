@@ -11,10 +11,12 @@
           <a class=logo-btn>Техномарт</a>
         </div>
         <div class=user-activites>
-            <!--форма поиска-->
-            <a class=bookmarks href=#bookmarks>Закладки</a>
-            <a class=basket href=#basket>Корзина: 0</a>
-            <a class=ordering href=#ordering>Оформить заказ</a>
+            <ul>
+                <li><!--форма поиска--></li>
+                <li><a class=bookmarks href=#bookmarks>Закладки</a></li>
+                <li><a class=basket href=#basket>Корзина: 0</a></li>
+                <li><a class=ordering href=#ordering>Оформить заказ</a></li>
+            </ul>
         </div>
       </div>
       <div class=header-middle>
@@ -22,9 +24,9 @@
             <h1>Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</h1>
         </div>
         <div class=contacts>
-          <div class=phone>
-            +7(812)555-05-55
-          </div>
+          <p class=phone>
+              <a href="tel:+78125550555" class="phone">+7(812)555-05-55</a>
+          </p>
           <div class=adress>
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </div>
@@ -62,10 +64,10 @@
             <h2>Техника</h2>
             <a class=category-btn href=equipment.html>Для стройки</a>
         </div>
-        <div class=slaider>
+        <div class=slider>
           <div class=slide1>
             <h2 class=slide-title>Дрели</h2>
-            <span>Соседям на радость!</span>
+            <p>Соседям на радость!</p>
             <img src=img/slider-1.jpg width="" height="" alt="Соседям на радость">
             <a class=slide-btn href=catalog.html>Открыть каталог</a>
           </div>
@@ -87,7 +89,7 @@
       </section>
       <section class=popular-goods>
         <div class=wrapper>
-          <span>Популярные товары</span>
+          <h2>Популярные товары</h2>
           <a class=btn href=#popular-goods>Все популярные товары</a>
         </div>
         <div class=catalog>
@@ -136,7 +138,7 @@
       </section>
       <section class=popular-producers>
         <div class=wrapper>
-          <span>Популярные производители</span>
+          <h2>Популярные производители</h2>
           <a class=btn href=#popular-goods>Все производители</a>
         </div>
         <ul class=producers>
@@ -283,13 +285,15 @@
         <div class=copyright>© 2010-2016 Компания «Техномарт»<br>Все права защищены</div>
       </div>
       <div class=social>
-        <a class=social-btn-vk href=#></a>
-        <a class=social-btn-fb href=#></a>
-        <a class=social-btn-inst href=#></a>
+        <ul>
+        <li><a class=social-btn-vk href=#></a></li>
+        <li><a class=social-btn-fb href=#></a></li>
+        <li><a class=social-btn-inst href=#></a></li>
+        </ul>
       </div>
       <div class=feedback>
         <p>Обратная связь:</p>
-        <a class=mail href=mail@htmlacademy.ru>mail@htmlacademy.ru</a>
+        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </div>
       <div class=feedback>
           <p>Разработано —</p>
