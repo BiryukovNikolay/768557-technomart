@@ -59,7 +59,69 @@
            </ul>
        </div>
        <h1 class="catalog-title">Перфораторы</h1>
-       <div class="filter">
+			  <section class="filter">
+					<form action="#" method="post" enctype="multipart/form-data">
+						<div class="filter-title">
+							<span>Фильтр:</span>
+						</div>
+						<div class="by-price">
+							<h3>Цена:</h3>
+							<div class="range-controls">
+								<div class="scale">
+									<div class="bar">
+									</div>
+								</div>
+								<div class="toggle min-toggle"></div>
+								<div class="toggle max-toggle"></div>
+							</div>
+							<div class="price-controls">
+								<input class="price-min" type="text" name="price-min" value="0"><span>—</span>
+								<input class="price-max" type="text" name="price-max" value="30000">
+							</div>
+						</div>
+						<hr class="line">
+						<fieldset class="by-producers">
+							<legend><h3>Производители:</h3></legend>
+							<ul class="list-producers">
+								<li>
+									<input type="checkbox" name="firm1" id="ch1" value="Bosch" checked>
+									<label for="ch1">Bosch</label>
+								</li>
+								<li>
+									<input type="checkbox" name="firm2" id="ch2" value="Интерскол">
+									<label for="ch2">Интерскол</label> 
+								</li>
+								<li>
+									<input type="checkbox" name="firm3" id="ch3" value="Makita" checked>
+									<label for="ch3">Makita</label>
+								</li>
+								<li>
+									<input type="checkbox" name="firm4" id="ch4" value="Dewalt">
+									<label for="ch4">Dewalt</label>
+								</li>
+								<li>
+									<input type="checkbox" name="firm5" id="ch5" value="Hitachi">
+									<label for="ch5">Hitachi</label>
+								</li>
+							</ul>
+						</fieldset>>
+						<hr class="line">
+						<fieldset class="by-supply">
+							<legend><h3>Питание:</h3></legend>
+							<ul class="list-supply">
+								<li>
+									<input type="radio" name="supply" id="rd1" value="accumulator" checked>
+									<label for="rd1">Аккумуляторные</label>
+                </li>
+                <li>
+									<input type="radio" name="supply" id="rd2" value="lan">
+									<label for="rd2">Сетевые</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button type="submit" class="btn-show">Показать</button>
+					</form>
+				</section>
            <!--Фильтр-->
        </div>
        <section class="catalog-list">
@@ -194,6 +256,7 @@
                      <li><a href="discont.html">Спецпредложения</a></li>
                      <li><a href="dilivery.html">Доставка</a></li>
                      <li><a href="contacts.html">Контакты</a></li>
+
                     </ul>
                   </nav>
                   <nav class="catalog-nav">
