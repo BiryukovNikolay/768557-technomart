@@ -12,16 +12,20 @@
           </div>
           <div class="user-activites">
               <ul>
-             <li><!--форма поиска--></li>
+             <li><form action="#" method="get" enctype="multipart/form-data">
+                  <input type="search" name="search" id="search" placeholder="Поиск:">
+                  <label class="search-label visually-hidden" for="search">Поиск</label>
+                  </form>
+              </li>
              <li><a class="bookmarks" href="#bookmarks">Закладки</a></li>
-             <li><a class="basket" href="#basket">Корзина: 0</a></li>
+             <li><a class="basket" href="#basket">Корзина: 10</a></li>
              <li><a class="ordering" href="#ordering">Оформить заказ</a></li>
              </ul>
           </div>
         </div>
             <div class="header-middle">
                <div class="title">
-                  <p>Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</p>>
+                  <p>Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</p>
                </div>
                <div class="contacts">
                   <p class="phone">
@@ -31,11 +35,18 @@
                     г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                   </div>
                </div>
-               <div class="user">
-                   <a class="login" href="#login">Войти</a>
-                   <a class="registration" href="#registration">Регистрация</a>
-               </div>
-            </div>
+              </div>
+			      	<div class="user-block">
+				      	<a class="loged" href="#">Равшан Джамшутович</a>
+                <div class="logout">
+                  <button class="logout visually-hidden">Выйти из профиля</button>
+                </div>
+		      		</div>
+	      			<div class="information">
+                <a class="my-orders" href="#">Мои заказы</a>
+                <span class="point"></span>
+                <a class="cabinet" href="#">Личный кабинет</a>
+              </div> 
                 <div class="header-bottom">
                   <nav class="main-nav">
                     <ul>
