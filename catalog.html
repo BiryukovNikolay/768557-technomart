@@ -71,7 +71,7 @@
        </div>
        <h1 class="catalog-title">Перфораторы</h1>
 			  <section class="filter">
-					<form action="#" method="post" enctype="multipart/form-data">
+					<form action="https//htmlacademy.ru/echo" method="post" enctype="multipart/form-data">
 						<div class="filter-title">
 							<span>Фильтр:</span>
 						</div>
@@ -79,8 +79,11 @@
 							<h3>Цена:</h3>
 							<input type="range" min="0" max="30000" step="500" value="25000">
 							<div class="price-controls">
-								<input class="price-min" type="text" name="price-min" value="0"><span>—</span>
-								<input class="price-max" type="text" name="price-max" value="30000">
+								<input class="price-min" type="text" id="price-min" name="price-min" value="0">
+              	<label  class="visually-hidden" for="price-min">Минимальная цена</label>
+                <span>—</span>
+								<input class="price-max" type="text"  id="price-max" name="price-max" value="30000">
+                <label class="visually-hidden" for="price-max">Максимальная цена</label>
 							</div>
 						</div>
 						<hr class="line">
@@ -108,7 +111,7 @@
 									<label for="ch5">Hitachi</label>
 								</li>
 							</ul>
-						</fieldset>>
+						</fieldset>
 						<hr class="line">
 						<fieldset class="by-supply">
 							<legend><h3>Питание:</h3></legend>
@@ -126,8 +129,6 @@
 						<button type="submit" class="btn-show">Показать</button>
 					</form>
 				</section>
-           <!--Фильтр-->
-       </div>
        <section class="catalog-list">
            <div class="sort">
                <p>Сортировка:</p>
@@ -291,5 +292,11 @@
                     <a class="mail" href="htmlacademy.ru">htmlacademy.ru</a>
                 </div>
      </footer>  
+     <section class="cart-add">
+        <h2>Товар добавлен в корзину</h2>
+        <button class="form-close" type="button">Закрыть</button>
+        <a href="#" class="btn">Оформить заказ</a>
+        <button class="btn-back">Продолжить покупки</button>
+     </section>
   </body>
  </html>

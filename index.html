@@ -70,19 +70,17 @@
             <a class="category-btn" href="equipment.html">Для стройки</a>
         </div>
         <div class="slider">
+            <button class="slider-btn1 visually-hidden">Следующий слайд</button>
+            <button class="slider-btn2 visually-hidden">Предыдущий слайд</button>
           <div class="slide1">
             <h2 class="slide-title">Дрели</h2>
             <p>Соседям на радость!</p>
-            <button class="slider-btn1 visually-hidden">Следкющий слайд</button>
-            <button class="slider-btn2 visually-hidden">Предыдущий слайд</button>
             <img src="img/slider-1.jpg" width="620" height="266" alt="Соседям на радость">
             <a class="slide-btn" href="catalog.html">Открыть каталог</a>
           </div>
           <div class="slide2">
             <h2 class="slide-title">Перфораторы</h2>
             <span>Настоящие мужские игрушки</span>
-            <button class="slider-btn1 visually-hidden">Следкющий слайд</button>
-            <button class="slider-btn2 visually-hidden">Предыдущий слайд</button>
             <img src="img/slider-2.jpg" width="620" height="266" alt="Настоящие мужские игрушки">
             <a class="slide-btn" href="catalog.html">Открыть каталог</a>
           </div>
@@ -266,25 +264,6 @@
         <a class="map" href="#"><img class="map-image" src="img/map.jpg" alt="Санкт-Петербург, улица Большая Конюшенная, Дом 19/8"></a>
         <a class="btn" href="#">Заблудились? Напишите нам!</a>
       </section>
-      <section class="form-ansver">
-        <button class="form-close" type="button">Закрыть</button>
-          <form class="write-us-form" action="#" method="post">
-             <label>
-               <p>Ваше имя:</p><br>
-               <input type="text" name="login" placeholder="Представьтесь, пожалуйста" onfocus="placeholder='';">
-             </label>
-             <label>
-                <p>Ваш e-mail:</p><br>
-                <input type="text" name="email" placeholder="Для отправки ответа" onfocus="placeholder='';"> 
-             </label>
-             <label>
-                 <p>Текст письма:</p>
-                 <textarea name="textletter" cols="61" rows="6" placeholder="В свободной форме" onfocus="placeholder='';"></textarea>
-             </label> 
-             <div class="form-btn">
-                  <button class="btn" type="submit">Отправить</button>
-              </form>
-      </section>
     </main>
     <footer class="main-footer">
       <div class="footer-up">
@@ -330,5 +309,29 @@
           <a class="mail" href="htmlacademy.ru">htmlacademy.ru</a>
       </div>
     </footer>
+     <section class="form-answer">
+        <button class="form-close" type="button">Закрыть</button>
+          <form class="write-us-form" action="https//htmlacademy.ru/echo" method="post">
+             <label>
+               Ваше имя:<br>
+               <input type="text" name="login" placeholder="Имя Фамилия">
+             </label>
+             <label>
+                Ваш e-mail:<br>
+                <input type="text" name="email" placeholder="email@exampel"> 
+             </label>
+             <label>
+                 Текст письма:
+                 <textarea name="textletter" cols="61" rows="6" placeholder="В свободной форме" onfocus="placeholder='';"></textarea>
+             </label> 
+             <div class="form-btn">
+                <button class="btn" type="submit">Отправить</button>
+             </div>
+           </form>
+      </section>
+      <section class="map-window">
+        <button class="form-close" type="button">Закрыть</button>
+        <a href="#">Карта</a>
+      </section>
   </body>
 </html>
