@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalaze.css">
+    <link rel="stylesheet" href="css/style.css"> 
   </head>
   <body>
     <header class="main-header">
@@ -11,11 +15,14 @@
                 <a href="index.html" class="logo-btn">Техномарт</a>
           </div>
           <div class="user-activites">
-              <ul>
-             <li><form action="#" method="get" enctype="multipart/form-data">
+              <ul class="user-nav">
+             <li>
+               <div class="search">
+                 <form action="#" method="get" enctype="multipart/form-data">
                   <input type="search" name="search" id="search" placeholder="Поиск:">
                   <label class="search-label visually-hidden" for="search">Поиск</label>
-                  </form>
+                 </form>
+               </div>
               </li>
              <li><a class="bookmarks" href="#bookmarks">Закладки</a></li>
              <li><a class="basket" href="#basket">Корзина: 10</a></li>
@@ -49,7 +56,7 @@
               </div> 
                 <div class="header-bottom">
                   <nav class="main-nav">
-                    <ul>
+                    <ul class="site-nav">
                       <li><a href="index.html">Главная</a></li>
                       <li><a href="company.html">Компания</a></li>
                       <li><a href="catalog.html">Каталог</a></li>
@@ -273,6 +280,7 @@
                     </ul>
                   </nav>
                 </div>
+                <div class="footer-down">
                 <div class="footer-bottom">
                   <div class="copyright">© 2010-2016 Компания «Техномарт»<br>Все права защищены</div>
                 </div>
@@ -290,6 +298,7 @@
                 <div class="feedback">
                     <p>Разработано —</p>
                     <a class="mail" href="htmlacademy.ru">htmlacademy.ru</a>
+                </div>
                 </div>
      </footer>  
      <section class="cart-add">
