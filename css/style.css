@@ -63,7 +63,7 @@ input[type=search] {
   color: rgba(255, 255, 255, 0.2)
 }
 
-.user-nava:active {
+.user-nav:active {
   background: #161d29
 }
 
@@ -245,7 +245,7 @@ a.ordering:active {
 }
 
 .main-nav a:active {
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.5);
   background: #1d2739
 }
 
@@ -338,6 +338,13 @@ a.ordering:active {
   background-repeat: no-repeat
 }
 
+.slide-title {
+  text-transform: uppercase;
+  line-height: 36px;
+  font-size: 36px;
+  font-family: "Cuprum", "Arial", sans-serif
+}
+
 .slide-btn {
   font-weight: 400;
   font-size: 14px;
@@ -345,7 +352,8 @@ a.ordering:active {
   text-decoration: none;
   text-align: center;
   background: #ee3643;
-  color: #fff
+  color: #fff;
+  text-transform: uppercase
 }
 
 .wrapper h2 {
@@ -630,18 +638,26 @@ a.ordering:active {
 }
 
 .sort-btn {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.3);
   text-decoration: none;
+  border-bottom: red 1px dotted;
 }
 
 .sort-btn:hover {
   color: rgb(0, 0, 0);
-  text-decoration: none;
+  border-bottom: red 1px solid;
 }
 
 .sort-btn:active {
   color: #ee3643;
   text-decoration: none;
+  border: none;
+}
+
+.sort-active {
+  color: #ee3643;
+  text-decoration: none;
+  border: none;
 }
 
 .filter-title,
