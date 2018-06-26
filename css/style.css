@@ -28,7 +28,6 @@ html {
 
 .logo-btn,
 .footer-logo-btn {
-  margin-left: 10px;
   background-color: #ee3643;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 24px;
@@ -42,6 +41,7 @@ html {
 .header-up-wrapper {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .user-nav {
   display: flex;
@@ -57,7 +57,7 @@ html {
 
 .header-up {
   display: flex;
-  width: 100%;
+  justify-content: space-between;
   background: #293449;
 }
 .user-activites .search {  
@@ -121,11 +121,12 @@ a.ordering:active {
 .header-middle {
   padding-top: 45px;
   padding-bottom: 45px;
-  padding-right: 10px;
-  display: flex;
-  align-content: center;
   color: #000;
   background-color: #f1f5f7;
+}
+.header-middle-wrapper {
+  display: flex;
+  align-content: center;
   justify-content: space-between;
 }
 
@@ -282,12 +283,12 @@ a.ordering:active {
   width: 940px;
 }
 .main-nav {
-  margin-right: 10px;
-  margin-left: 10px;
+
   display: flex;
   margin-bottom: 60px;
   list-style: none;
-  background-color: #32425c
+  background-color: #32425c;
+  width: 100%;
 }
 
 .main-nav a  {
@@ -325,16 +326,11 @@ a.ordering:active {
 }
 
 .catalog {
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-bottom: 55px;
+  margin-bottom: 20px;
   display: flex;
   background: #fff;
-  color: #000
-
-}
-category {
-  margin: 20px;
+  color: #000;
+  justify-content: space-around;
 }
 
 .category  h2 {
@@ -429,8 +425,6 @@ category {
 .wrapper {
   align-content: center;
   display: flex;
-  margin-left: 10px;
-  margin-right: 10px;
   padding-left: 30px;
   padding-right: 25px;
   margin-bottom: 20px; 
@@ -476,7 +470,9 @@ category {
   line-height: 18px;
   text-align: center;
   vertical-align: middle;
-  border: 1px solid #e5e5e5
+  border: 1px solid #e5e5e5;
+  width: 220px;
+  height: 320px;
 }
 .catalog-items{
   min-width: 940px;
@@ -484,7 +480,7 @@ category {
   margin: 0px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 
@@ -532,28 +528,44 @@ category {
   font-style: bold;
 }
 
+
+.popular-producers {
+  margin-bottom: 20px;
+}
+
 .producers {
+  flex-wrap: wrap;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0px;
   padding: 0px;
+}
 
+.producer-icon {
+  height: 145px;
+  width:  220px;
+  border: 1px solid #e5e5e5;
+}
+
+.prod-img {
+  margin-top: 10px;
 }
 .services-block {
   width: 100%;
   display: flex;
   margin-bottom: 80px;
-  padding-bottom: 100px 
+  padding-bottom: 100px; 
+  margin-left: 10px;
 }
 .services {
   background-color: #f2f6f8;
-  padding-left: 10px;
-  padding-right: 10px;
   padding-top: 65px;
 }
 
-.services h2, .service p {
+.services h2, 
+.service p {
   font-weight: 400;
+  margin-left: 10px;
   font-style: normal;
   line-height: 24px
 }
@@ -639,12 +651,12 @@ category {
   justify-content: space-between;
   display: flex;
   color: #fff;
-  background: #32425c
 }
-.right-footer-up {
-  margin-left: 10px;
-  margin-right: 10px;
+.footer-wrapper-up {
+  background: #32425c;
+  width: 100%;
 }
+
 
 .footer-logo-btn {
  font-size: 30px;
@@ -712,14 +724,14 @@ category {
 }
 
 .footer-down {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 10px;
-  padding-right: 10px;
   padding-bottom: 35px;
   padding-top: 40px;
   background: #293449
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
 }
 
 .copyright {
@@ -777,20 +789,23 @@ category {
   text-decoration: none;
   color: #ee3643
 }
+.for-catalog {
+  margin-bottom: 20px;
+}
 
 .breadcrumbs {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-title {
   align-content: center;
   display: flex;
-  margin-left: 10px;
-  margin-right: 10px;
   padding-left: 30px;
   padding-right: 25px;
   padding-top: 30px;
-  padding-bottom: 30px; 
+  padding-bottom: 25px; 
   margin-bottom: 20px; 
   justify-content: space-between;
   background-color: #f7f3ec;
@@ -821,8 +836,6 @@ category {
 
 .catalog-block {
   display: flex;
-  padding-left: 10px;
-  padding-right: 10px;
   margin-bottom: 60px;
 }
 .filter {
@@ -894,6 +907,7 @@ category {
 }
 
 .btn-show {
+  margin-top: 75px;
   font-weight: 400;
   font-style: normal;
   font-size: 13px;
