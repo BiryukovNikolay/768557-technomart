@@ -345,18 +345,16 @@ a.ordering:active {
   color: #cacaca
 }
 
-.login::before {
-  content: "";
+.login-icon {
   position: absolute;
   top: 13px;
   left: 13px;
   width: 20px;
   height: 20px;
-  background-image: url("../img/icon-login.svg");
-  background-repeat: no-repeat;
+ 
 }
 
-.login:hover::before path {
+.login:hover path {
   fill: #293449;
 }
 
@@ -405,6 +403,26 @@ a.ordering:active {
   color: rgba(0, 0, 0, 0.2)
 }
 
+.loged:hover::after {
+  background-image: url("../img/icon-logout-hover.svg");
+  background-repeat: no-repeat;
+}
+
+.loged:hover::before {
+  background-image: url("../img/icon-user-hover.svg");
+  background-repeat: no-repeat;
+}
+
+.loged:active::after {
+  background-image: url("../img/icon-logout-hover.svg");
+  background-repeat: no-repeat;
+}
+
+.loged:acnive::before {
+  background-image: url("../img/icon-user-hover.svg");
+  background-repeat: no-repeat;
+}
+
 .information {
   margin-top: 8px;
   padding-left: 15px;
@@ -431,12 +449,15 @@ a.ordering:active {
 }
 
 .point {
+  position: absolute;
   width: 5px;
   height: 5px;
   margin-left: 15px;
   margin-bottom: 2px;
   background: #32425c;
-  border-radius: 50px
+  border-radius: 50px;
+  top: 152px;
+  right: 373px;
 }
 
 
@@ -638,6 +659,7 @@ a.ordering:active {
   right: 0px;
   width: 60px;
   height: 60px;
+  z-index:3;
 }
 
 .slide1 {
@@ -775,10 +797,9 @@ a.ordering:active {
   top:0;
   left:0;
   width:218px;
-  height:88px;
   padding:40px 0;
-  background-color:rgba(255,255,255,0.9);
-  z-index:10;
+  background-color:rgb(255,255,255);
+  z-index:2;
 }
 
 .catalog-item .image{
@@ -963,7 +984,6 @@ a.prod-img:active {
 .services h2, 
 .service p {
   font-weight: 400;
-  margin-left: 10px;
   font-style: normal;
   line-height: 24px
 }
@@ -1042,6 +1062,20 @@ a.prod-img:active {
 .services-table tr:first-child {
   color: #32425c;
   background-color: #fff;
+}
+
+.services-table tr:hover {
+  background-color: #293449;
+}
+
+.services-table tr {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.services-table tr:nth-child(2) {
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #293449;
 }
 
 .services-right {
@@ -1214,7 +1248,8 @@ a.prod-img:active {
 }
 
 .footer-nav a:active {
-  color: #a4abb4
+  color: #a4abb4;
+  text-decoration: none;
 }
 
 .catalog-nav a {
@@ -1232,7 +1267,8 @@ a.prod-img:active {
 }
 
 .catalog-nav a:active {
-  color: #ad956f
+  color: #ad956f;
+  text-decoration: none;
 }
 
 .footer-down {
@@ -1347,7 +1383,8 @@ ul.social-icon\> {
 }
 
 
-.home::before {
+
+.catalog-way::before {
   content: "";
   position: absolute;
   top: 1px;
@@ -1358,14 +1395,14 @@ ul.social-icon\> {
   background-repeat: no-repeat;
 }
 
-.breadcrumbs a::before {
+.home::before {
   content: "";
   position: absolute;
   top: 1px;
-  left: -19px;
+  left: -10px;
   width: 16px;
   height: 20px;
-  background-image: url("../img/icon-right-small.svg");
+  background-image: url("../img/icon-home.svg");
   background-repeat: no-repeat;
 }
 
@@ -1377,6 +1414,35 @@ ul.social-icon\> {
 .catalog-way {
   position: relative;
   margin-right: 38px;
+}
+
+.sort-up {
+  position: absolute;
+  right: 230px;
+  transform: rotate(180deg);
+  fill: #c5c5c5;
+}
+.sort-down:hover path,
+.sort-up:hover path{
+ fill: #231f20;
+}
+
+.sort-down:active path,
+.sort-up:active path{
+  fill: #ee3643;
+}
+
+
+.sort-down {
+  position: absolute;
+  right: 200px;
+  
+}
+.sort-up path {
+  fill: #ee3643;
+}
+.sort-down path {
+  fill: #c5c5c5;
 }
 
 .catalog-title {
@@ -1613,8 +1679,7 @@ fieldset {
   background: url(../img/checkbox-off.svg) no-repeat;
 }
 
-.list-producers li:first-child input[type=checkbox]+label::before,
-.list-producers li:nth-child(3) input[type=checkbox]+label::before  {
+.list-producers li:checked input[type=checkbox]+label::before  {
   content: '';
   position: absolute;
   width: 26px;
@@ -1636,7 +1701,7 @@ fieldset {
   background: url(../img/radio-off.svg) no-repeat;
 }
 
-.list-supply li:first-child input[type="radio"]+label::before {
+.list-supply li:checked input[type="radio"]+label::before {
   content: '';
   position: absolute;
   width: 26px;
