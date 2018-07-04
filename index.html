@@ -92,7 +92,7 @@
           <div class="slide2">
             <h2 class="slide-title">Перфораторы</h2>
             <span>Настоящие мужские игрушки</span>
-            <a class="slide-btn" href="catalog.html">Открыть каталог</a>
+            <a class="btn slide-btn" href="catalog.html">Открыть каталог</a>
           </div>
         </div>
         <div class="category-block">
@@ -215,26 +215,16 @@
         <div class="services-block">
         <div class="services-left">
           <div class="shadow"></div>
-          <table class="services-table">
-            <tr>
-              <td>
+          <div class="services-table">
+
                 <input type="radio" id="button-1" name="service-toggle" checked>
                 <label for="button-1">Доставка</label>
-              </td>
-            </tr>
-            <tr>
-              <td>
+
                 <input type="radio" id="button-2" name="service-toggle">
                 <label for="button-2">Гарантия</label>
-              </td>
-            </tr>
-            <tr>
-              <td>
                 <input type="radio" id="button-3" name="service-toggle">
                 <label for="button-3">Кредит</label>
-              </td>
-            </tr>
-          </table>
+        </div>
         </div>
         <div class="services-right">
           <div class="servises-dilivery">
@@ -243,13 +233,13 @@
               Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br> поднимая его на ваш на этаж!
             </p>
           </div>
-          <div class="servises-guarantee visually-hidden">
+          <div class="servises-guarantee ">
             <h2>Гарантия</h2>
             <p>
                 Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его вогаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как нибудь сами
             </p>
           </div>
-          <div class="servises-credit visually-hidden">
+          <div class="servises-credit">
             <h2>Кредит</h2>
             <p>
                 Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
@@ -340,31 +330,32 @@
       </div>
       </div>
     </footer>
-     <section class="form-answer">
+     <section class="modal form-answer">
         <button class="form-close" type="button">Закрыть</button>
          <div class="write-us-block">
           <form class="write-us-form" action="https//htmlacademy.ru/echo" method="post">
               <label>
-               Ваше имя:
+               <p>Ваше имя:</p>
                <input type="text" name="login" placeholder="Имя Фамилия">
              </label>
              <label>
-                Ваш e-mail:
+                <p>Ваш e-mail:</p>
                 <input type="text" name="email" placeholder="email@exampel"> 
              </label>
              <label>
-                 Текст письма:
-                 <textarea name="textletter" cols="80" rows="6" placeholder="В свободной форме" onfocus="placeholder='';"></textarea>
+                <p>Текст письма:</p>
+                 <textarea name="textletter" cols="71" rows="6" placeholder="В свободной форме" onfocus="placeholder='';"></textarea>
              </label> 
-             <div class="form-btn">
-                <button class="btn send-btn" type="submit">Отправить</button>
-             </div>
            </form>
            </div>
+           <div class="form-btn">
+                <button class="btn send-btn" type="submit">Отправить</button>
+             </div>
       </section>
-      <section class="map-window">
+      <section class="modal map-window">
         <button class="form-close" type="button">Закрыть</button>
-        <a href="#">Карта</a>
+        <img src="../img/modal-map.jpg" height="445" width="940">
+        <!--<a class="modal-map" href="#"><span class"visually-hidden">Карта</span></a>-->
       </section>
   </body>
 </html>
