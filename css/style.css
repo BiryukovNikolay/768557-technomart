@@ -1538,34 +1538,7 @@ ul.social-icon\> {
   margin-right: 38px;
 }
 
-.sort-up {
-  position: absolute;
-  right: 47px;
-  transform: rotate(180deg);
-  fill: #c5c5c5;
-}
-.sort-down:hover path,
-.sort-up:hover path{
- fill: #231f20;
-}
 
-.sort-down:active path,
-.sort-up:active path{
-  fill: #ee3643;
-}
-
-
-.sort-down {
-  position: absolute;
-  right: 17px;
-  
-}
-.sort-up path {
-  fill: #ee3643;
-}
-.sort-down path {
-  fill: #c5c5c5;
-}
 
 .catalog-title {
   align-content: center;
@@ -1625,6 +1598,8 @@ ul.social-icon\> {
   margin-bottom: 20px;
   padding: 10px;
 }
+
+
 
 .range-controls {
   position: relative;
@@ -1710,12 +1685,23 @@ ul.social-icon\> {
   padding: 10px 0 10px 19px;
 }
 
+
+.sort span {
+  margin-right: 65px;
+  padding-left: 10px;
+  color: #000;
+  text-transform: uppercase;
+}  
+
+
 .sort-btn {
-  margin-right: 70px;
+  margin-left: 65px;
   color: rgba(0, 0, 0, 0.3);
   text-decoration: none;
   border-bottom: red 1px dotted;
 }
+
+
 
 .sort-btn:hover {
   color: rgb(0, 0, 0);
@@ -1740,8 +1726,33 @@ ul.social-icon\> {
   background: #f7f3ec;
 }
 
-.sort {
-  position: relative;
+.sort-up svg {
+  margin-left: 45px;
+  transform: rotate(180deg);
+  fill: #c5c5c5;
+}
+
+.sort-down:hover path,
+.sort-up:hover path{
+ fill: #231f20;
+}
+
+.sort-down:active path,
+.sort-up:active path{
+  fill: #ee3643;
+}
+
+
+.sort-down { 
+  margin-left: 20px;
+
+}
+
+.sort-up path {
+  fill: #ee3643;
+}
+.sort-down path {
+  fill: #c5c5c5;
 }
 
 .by-producers h3,
@@ -1756,9 +1767,13 @@ ul.social-icon\> {
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase
 }
+
+
 .by-producers {
   margin-bottom: 22px;
 }
+
+
 
 .list-producers input[type=checkbox], 
 .list-supply input[type=radio],
@@ -1798,6 +1813,7 @@ fieldset {
 .list-producers input[type="checkbox"]:disabled + label,
 .list-supply input[type="radio"]:disabled + label  {
   opacity: 0.4;
+  cursor: default;
 }
 
 
@@ -1831,6 +1847,7 @@ fieldset {
 }
 .list-producers input[type=checkbox]:disabled+label::before {
   opacity: 0.4;
+  cursor: default;
 }
 
 .list-supply input[type="radio"]+label::before {
@@ -1863,6 +1880,7 @@ fieldset {
 
 .list-supply input[type="radio"]:disabled+label::before {
   opacity: 0.4;
+  cursor: default;
 }
 
 .btn-show {
@@ -1881,12 +1899,7 @@ fieldset {
   cursor: pointer
 }
 
-.sort span {
-  margin-right: 139px;
-  padding-left: 19px;
-  color: #000;
-  text-transform: uppercase;
-}
+
 
 .page {
   margin: 0;
@@ -1962,13 +1975,14 @@ fieldset {
 .modal {
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   left: 50%;
-  top: 50px;
+  top: 50%;
   background-color: white;
   position: fixed;
 }
 
 .form-answer {
   margin-left: -310px;
+  margin-top: -216px;
   width: 620px;
   z-index: 3;
   border-top: 10px solid #ff5257;
@@ -1979,13 +1993,15 @@ fieldset {
   width:  940px;
   height: 445px;
   margin-left: -470px;
+  margin-top: -222px;
   z-index: 3;
-  background-image: url(../img/modal-map.jpg);
+  /*background-image: url(../img/modal-map.jpg);*/
   display: none;
 }
 
 .cart-add {
   width: 620px;
+  margin-top: -140px;
   margin-left: -310px;
   z-index: 10;
   background-image: url(../img/icon-mark.svg);
@@ -2051,6 +2067,17 @@ fieldset {
   width: 100%;
 }
 
+.write-us-form  textarea:focus,
+.write-us-form  input[type=text]:hover {
+  border-color: #b5b5b5;
+}
+
+.write-us-form  textarea:focus,
+.write-us-form  input[type=text]:focus {
+  border-color: #ee3643;
+  outline: none;
+}
+
 .form-btn {
   background-color: #f4f4f4;
   width: 100%;
@@ -2071,6 +2098,7 @@ fieldset {
   font-size: 0;
   background-color: white;
   cursor: pointer;
+ z-index: 30;
 }
 
 .form-close::before {
@@ -2081,6 +2109,7 @@ fieldset {
   right: 5px;
   width: 20px;
   height: 20px;
+ z-index: 30; 
 }
 
 .send-btn {
@@ -2113,4 +2142,9 @@ fieldset {
   font-family: "Cuprum", "Arial", sans-serif;
   padding-left: 176px;
   margin: 0 auto;
+}
+
+
+.modal-show {
+  display: block;
 }
