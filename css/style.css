@@ -595,49 +595,40 @@ a.full-basket {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.material,
-.dilivery {
-  background: #f6b22d;
-}
-
-.dilivery {
-  background-image: url(../img/delivery-icon.png);
-  background-repeat: no-repeat;
-  background-position: 200px 30px;
-}
-
 .material {
-  background-image: url(../img/materials-icon.png);
+  background-color: #ffbf47;
+  background-image: url(../img/icon-1.svg);
   background-repeat: no-repeat;
-  background-position: 212px 30px;
+  background-position: 213px 31px;
 }
 
 .instruments {
   background: #4aafde;
-  background-image: url(../img/tool-icon.png);
+  background-image: url(../img/icon-2.svg);
   background-repeat: no-repeat;
-  background-position: 200px 30px;
+  background-position: 198px 33px;
 }
 
 .equipment {
   background: #cc79d1;
-  background-image: url(../img/technics-icon.png);
+  background-image: url(../img/icon-3.svg);
   background-repeat: no-repeat;
-  background-position: 178px 30px;
+  background-position: 191px 31px;
 }
 
 .discount {
   margin-bottom: 20px;
   background: #85d179;
-  background-image: url(../img/discounts-icon.png);
+  background-image: url(../img/icon-4.svg);
   background-repeat: no-repeat;
-  background-position: 200px 30px;
+  background-position: 196px 26px;
 }
 
-.category-img {
-  top: 30px;
-  right: 43px;
-  position: absolute;
+.delivery {
+  background-color: #ffc047;
+  background-image: url(../img/icon-5.svg);
+  background-repeat: no-repeat;
+  background-position: 191px 32px;
 }
 
 .new::after {
@@ -692,11 +683,15 @@ a.full-basket {
 }
 
 .slider .slide-btn {
-  display: block;
   position: absolute;
   bottom: 22px;
   left: 25px;
-  margin: 0px;
+  display: block;
+  min-width: 195px;
+  margin: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: center;
 }
 
 .slider-btn {
@@ -1046,7 +1041,7 @@ a.prod-img:active {
   font-family: 'PT Sans', 'Arial', sans-serif;
 }
 
-.servises-dilivery p {
+.servises-delivery p {
   width: 275px;
 }
 .servises-guarantee {
@@ -1055,7 +1050,7 @@ a.prod-img:active {
   background-color: #f2f6f8;
 }
 
-.servises-dilivery {
+.servises-delivery {
   z-index: 1;
   position: absolute;
   background-color: #f2f6f8;
