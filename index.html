@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">  
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -82,29 +82,29 @@
             <a class="category-btn" href="equipment.html">Для стройки</a>
         </div>
         <div class="slider">
-            <button class="slider-btn1" type="button"><span class="visually-hidde8n">Следующий слайд</span></button>
-            <button class="slider-btn2" type="button"><span class="visually-hidd8en">Предыдущий слайд</span></button>
-          <div class="slide1">
-            <h2 class="slide-title">Дрели</h2>
-            <span>Соседям на радость!</span>
-            <a class="btn slide-btn" href="catalog.html">Открыть каталог</a>
-          </div>
-          <div class="slide2">
+          <input class="visually-hidden" type="radio" name="slider" id="slide1">
+          <label class="slider-btn slider-btn1" for="slide2"><span class="visually-hidden">Следующий слайд</span></label>
+          <input class="visually-hidden" type="radio" name="slider" id="slide2" checked>
+          <label class="slider-btn slider-btn2" for="slide1"><span class="visually-hidden">Предыдущий слайд</span></label>
+
+          <ul class="slide-dots">
+            <li>
+              <label class="slide-dot slide-dot1" for="slide1"><span class="visually-hidden">Слайд первый</span></label>
+            </li>
+            <li>
+              <label class="slide-dot slide-dot2" for="slide2"><span class="visually-hidden">Слайд второй</span></label>
+            </li>
+          </ul>
+
+          <div class="slide slide1">
             <h2 class="slide-title">Перфораторы</h2>
             <span>Настоящие мужские игрушки</span>
             <a class="btn slide-btn" href="catalog.html">Открыть каталог</a>
           </div>
-          <div class="slide-dots">
-          		<ul class="slide-radio">
-								<li>
-									<input type="radio" name="slide" id="s1" value="s1" checked>
-									<label for="s1"><span class="visually-hidden">Слайд первый</span></label>
-                </li>
-                <li>
-									<input type="radio" name="slide" id="s2" value="s2">
-									<label for="s2"><span class="visually-hidden">Слайд второй</span></label>
-								</li>
-							</ul>
+          <div class="slide slide2">
+            <h2 class="slide-title">Дрели</h2>
+            <span>Соседям на радость!</span>
+            <a class="btn slide-btn" href="catalog.html">Открыть каталог</a>
           </div>
         </div>
         <div class="category-block">
@@ -310,7 +310,7 @@
             <li><a href="material.html">Материалы</a></li>
             <li><a href="equipment.html">Техника</a></li>
             <li><a href="instruments.html">Инструменты</a></li>
-            <li><a href="discount.html">Спецпредложения</a></li> 
+            <li><a href="discount.html">Спецпредложения</a></li>
           </ul>
         </nav>
         </div>
@@ -352,12 +352,12 @@
              </label>
              <label>
                 <p>Ваш e-mail:</p>
-                <input type="text" name="email" placeholder="email@exampel"> 
+                <input type="text" name="email" placeholder="email@exampel">
              </label>
              <label>
                 <p>Текст письма:</p>
                  <textarea name="textletter" cols="71" rows="6" placeholder="В свободной форме" onfocus="placeholder='';"></textarea>
-             </label> 
+             </label>
            </form>
            </div>
            <div class="form-btn">
