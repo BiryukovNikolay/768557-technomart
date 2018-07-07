@@ -173,7 +173,7 @@ a.ordering {
   color: #fff;
   background: #5fbb2d;
   width: 150px;
-  padding: 11px 0 12px 20px;
+  padding: 12px 0 12px 20px;
 }
 
 a.ordering:hover {
@@ -825,8 +825,8 @@ a.full-basket {
   vertical-align: middle;
   border: 1px solid #e5e5e5;
   width: 220px;
-  height: 320px;
-  margin-bottom: 20px;
+  height: 318px;
+  margin-bottom: 22px;
   padding-top: 16px;
 }
 
@@ -836,7 +836,7 @@ a.full-basket {
   line-height: 20px;
   min-height: 40px;
   padding: 0 25px;
-  margin-top: -5px;
+  margin-top: -4px;
   margin-bottom: 11px;
 }
 
@@ -854,11 +854,32 @@ a.full-basket {
 }
 
 .catalog-item .image {
-  width: 218px;
-  height: 168px;
+  position: relative;
+  min-height: 168px;
 }
-.catalog-item .image img {
+
+.catalog-item img {
   max-width: 100%;
+}
+
+.catalog-item .image-1 {
+  top: -11px;
+  left: -1px;
+}
+
+.catalog-item .image-2 {
+  top: 12px;
+  left: -7px;
+}
+
+.catalog-item .image-3 {
+  top: 5px;
+  left: -11px;
+}
+
+.catalog-item .image-4 {
+top: 12px;
+  left: -15px;
 }
 
 .catalog-items {
@@ -883,12 +904,10 @@ a.full-basket {
 
 .catalog-btn {
   display: block;
-  min-height: 40px;
+  min-height: 38px;
   position: relative;
-  width: 140px;
-  margin: 10px auto;
-  margin-bottom: 20px;
-  margin-top: 33px;
+  width: 135px;
+  margin: 0 auto;
   padding: 10px 30px;
   color: white;
   background: #ee3643;
@@ -899,16 +918,16 @@ a.full-basket {
 .catalog-btn::after {
   content: '';
   position: absolute;
-  top: 0;
-  right: -25px;
+  top: -2px;
+  right: -27px;
   width: 0;
   height: 0;
-  border: 20px solid white;
+  border: 21px solid white;
   border-left-color: #ee3643;
 }
 
 .old-price + .catalog-btn {
-  margin-top: 10px;
+  margin-top: 7px;
 }
 
 .buy-btn,
@@ -935,6 +954,12 @@ a.full-basket {
 .catalog-item .actions {
   display: none;
 }
+
+.catalog-item .info {
+  margin-bottom: 7px;
+  min-height: 67px;
+}
+
 .catalog-item:hover .actions {
   display: block;
 }
@@ -1099,7 +1124,7 @@ a.prod-img:active {
 }
 
 .servises-delivery {
-  padding-left: 1px; 
+  padding-left: 1px;
   display: block;
   position: absolute;
   top: -5px;
@@ -1308,7 +1333,7 @@ a.prod-img:active {
   justify-content: space-between;
   display: flex;
   color: #fff;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 }
 .footer-wrapper-up {
   background: #32425c;
@@ -1318,8 +1343,8 @@ a.prod-img:active {
 .footer-logo-btn {
   font-size: 30px;
   display: inline-block;
-  padding: 21px 41px 18px;
-  margin-bottom: 14px;
+  padding: 21px 42px 18px 41px;
+  margin-bottom: 15px;
 }
 
 .right-footer-up p {
@@ -1342,11 +1367,11 @@ a.prod-img:active {
 }
 
 .foot-nav {
-  padding: 7px 0;
+  padding: 8px 0;
   margin: 0 auto;
   justify-content: space-between;
   display: flex;
-  padding-left: 14px;
+  padding-left: 12px;
 }
 
 .catalog-nav {
@@ -1355,11 +1380,13 @@ a.prod-img:active {
   width: 584px;
   justify-content: space-between;
 
-  
+
 }
 .cat-nav {
-  justify-content: space-around;
+  justify-content: space-between;
   display: flex;
+  padding-right: 24px;
+  padding-left: 35px;
 }
 .footer-nav a {
   font-size: 18px;
@@ -1411,11 +1438,13 @@ a.prod-img:active {
 }
 
 .social {
-  margin-left: 85px;
+  margin-left: 88px;
 }
 
 .copyright {
   width: 230px;
+  padding-top: 2px;
+  padding-left: 1px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -1471,12 +1500,12 @@ ul.social-icon\> {
   color: #fff;
 }
 .feedback {
-  margin-left: 45px;
+  margin-left: 48px;
   width: 140px;
 }
 .feedback:nth-child(2) {
   width: 93px;
-  margin-right: 20px;
+  margin-right: 18px;
 }
 .feedback a {
   display: block;
