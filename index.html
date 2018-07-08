@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -201,7 +200,7 @@
             </a>
           </li>
           <li class="producer-icon">
-            <a class="prod-img" href="#interscol">
+            <a class="prod-img interscol" href="#interscol">
               <img  src="img/interscol-icon.jpg" height="88" width="200" alt="интерскол">
             </a>
           </li>
@@ -220,7 +219,7 @@
               <img  src="img/aeg-icon.jpg" height="96" width="151" alt="aeg">
             </a>
           </li>
-          <li class="producer-icon">
+          <li class="producer-icon metabo">
             <a class="prod-img"  href="#metabo">
               <img  src="img/metabo-icon.jpg" height="69" width="204" alt="metabo">
             </a>
@@ -374,13 +373,13 @@
     </section>
     <section class="modal map-window">
       <button class="form-close" type="button">Закрыть</button>
-      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A881c6db17939dd28da8c56e79d03270e93a1c12b989639a346f9743a730f88fe&amp;source=constructor" width="940" height="495"></iframe>
+      <iframe class="interactive-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A881c6db17939dd28da8c56e79d03270e93a1c12b989639a346f9743a730f88fe&amp;source=constructor" width="940" height="495"></iframe>
     </section>
     <section class="modal cart-add">
       <button class="form-close" type="button">Закрыть</button>
-      <h2>Товар добавлен в корзину</h2>
+      <h2>Товар добавлен в корзину!</h2>
       <div class="form-btn">
-        <a href="#" class="btn">Оформить заказ</a>
+        <a href="#" class="btn ordering-btn">Оформить заказ</a>
         <button class="btn-back btn">Продолжить покупки</button>
       </div>
     </section>
