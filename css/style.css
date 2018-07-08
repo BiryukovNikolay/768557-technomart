@@ -878,7 +878,7 @@ a.full-basket {
 }
 
 .catalog-item .image-4 {
-top: 12px;
+  top: 12px;
   left: -15px;
 }
 
@@ -1001,7 +1001,6 @@ top: 12px;
 }
 .catalog-item h2 {
   font-size: 18px;
-  font-style: bold;
 }
 
 .popular-producers {
@@ -1080,9 +1079,6 @@ a.prod-img:active {
   margin-bottom: 24px;
 }
 
-.credit-btn {
-  width: ;
-}
 
 .services p {
   display: block;
@@ -1796,7 +1792,6 @@ ul.social-icon\> {
   margin: 0;
   padding: 0;
   font-weight: 700;
-  font-style: bold;
   font-size: 17px;
   line-height: 30px;
   font-family: 'PT Sans', 'Arial', sans-serif;
