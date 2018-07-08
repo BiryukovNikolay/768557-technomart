@@ -135,6 +135,17 @@ input[type='search'] {
   background-position: 15px 13px;
   background-size: 17px;
 }
+ 
+::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+:-ms-input-placeholder, 
+::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
 
 input[type='search']:hover {
   background: #212a3a;
@@ -1186,7 +1197,7 @@ a.prod-img:active {
   background-color: #f2f6f8;
   background-image: url(../img/bg-guarantee.png);
   padding-right: 345px;
-  background-position: 200px 0px;
+  background-position: 200px 40px;
   background-repeat: no-repeat;
   min-height: 300px;
 }
