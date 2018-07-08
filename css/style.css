@@ -981,11 +981,11 @@ a.full-basket {
 .catalog-btn::after {
   content: '';
   position: absolute;
-  top: -2px;
+  top: 0px;
   right: -27px;
   width: 0;
   height: 0;
-  border: 21px solid white;
+  border: 19px solid white;
   border-left-color: #ee3643;
 }
 
@@ -1132,7 +1132,7 @@ a.prod-img:active {
 
 .services {
   background-color: #f2f6f8;
-  padding-top: 39px;
+  padding-top: 33px;
 }
 
 .services h2,
