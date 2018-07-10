@@ -7,7 +7,10 @@ var formbtn = document.querySelector('.map-btn');
 var formframe = document.querySelector('.form-answer');
 var buy = document.querySelectorAll('.buy-btn'); 
 var cartframe = document.querySelector('.cart-add');
-
+var form = formframe.querySelector("form");
+var login = formframe.querySelector("[name=login]");
+var email = formframe .querySelector("[name=email]");
+var textletter = formframe .querySelector("[name=textletter]");
 
 
 if (mapbtn) {
@@ -50,9 +53,19 @@ function closeAllModals() {
 
   if (formframe) {
     formframe.classList.remove('modal-show');
+    formframe.classList.remove("modal-error");
   }
 
   if (mapframe) {
     mapframe.classList.remove('modal-show');
   }
 }
+
+form.addEventListener("submit", function(evt) {
+  if(!login.value || !email.value || !textletter.value) {
+      evt.preventDefault();
+      formframe.classList.remove("modal-error");
+      formframe.offsetWidth = formframe.offsetWidth;
+      formframe.classList.add("modal-error");
+    }});
+

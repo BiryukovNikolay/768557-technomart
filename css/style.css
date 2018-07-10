@@ -1499,6 +1499,7 @@ a.prod-img:active {
 .footer-logo-btn {
   font-size: 30px;
   display: inline-block;
+  text-align: center;
   padding: 21px 42px 18px 41px;
   margin-bottom: 15px;
 }
@@ -1674,6 +1675,7 @@ ul.social-icon\> {
   margin: 0;
   padding: 0;
   display: inline-block;
+  text-align: center;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -2395,6 +2397,8 @@ a.page-next  {
 
 .modal-show {
   display: block;
+  animation-name: bounce;
+  animation-duration: 0.6s;
 }
 
 .interactive-map {
@@ -2402,3 +2406,33 @@ a.page-next  {
   height: 100%; 
   border: 0;
 }
+
+@keyframes bounce {
+  0% {transform: translateY(-2000px)}
+  70% {transform: translateY(30px) }
+  90% {transform: translateY(-10px)}
+  100% {transform: translate(0)}
+}
+
+
+@keyframes shake {
+  0%,
+  100% {transform: translateX(0);}
+ 
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {transform: translateX(-10px);}
+
+  20%,
+  40%,
+  60%,
+  80% {transform: translateX(10px);}
+}
+
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
