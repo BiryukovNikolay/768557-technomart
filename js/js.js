@@ -1,17 +1,17 @@
-
-
 var mapbtn = document.querySelector('.map');
 var mapframe = document.querySelector('.map-window');
-var closemodal = document.querySelectorAll('.form-close'); 
+var closemodal = document.querySelectorAll('.form-close');
 var formbtn = document.querySelector('.map-btn');
 var formframe = document.querySelector('.form-answer');
-var buy = document.querySelectorAll('.buy-btn'); 
+var buy = document.querySelectorAll('.buy-btn');
 var cartframe = document.querySelector('.cart-add');
-var form = formframe.querySelector("form");
-var login = formframe.querySelector("[name=login]");
-var email = formframe .querySelector("[name=email]");
-var textletter = formframe .querySelector("[name=textletter]");
 
+if (formframe) {
+  var form = formframe.querySelector('form');
+  var login = formframe.querySelector('[name=login]');
+  var email = formframe.querySelector('[name=email]');
+  var textletter = formframe.querySelector('[name=textletter]');
+}
 
 if (mapbtn) {
   mapbtn.addEventListener('click', function(evt) {
@@ -29,12 +29,11 @@ if (formbtn) {
   });
 }
 
-
 for (var i = 0; i < buy.length; i++) {
   buy[i].addEventListener('click', function(evt) {
     evt.preventDefault();
-    closeAllModals(); 
-    cartframe.classList.add('modal-show'); 
+    closeAllModals();
+    cartframe.classList.add('modal-show');
   });
 }
 
@@ -45,7 +44,6 @@ for (var i = 0; i < closemodal.length; i++) {
   });
 }
 
-
 function closeAllModals() {
   if (cartframe) {
     cartframe.classList.remove('modal-show');
@@ -53,7 +51,7 @@ function closeAllModals() {
 
   if (formframe) {
     formframe.classList.remove('modal-show');
-    formframe.classList.remove("modal-error");
+    formframe.classList.remove('modal-error');
   }
 
   if (mapframe) {
@@ -61,12 +59,20 @@ function closeAllModals() {
   }
 }
 
-form.addEventListener("submit", function(evt) {
-  if(!login.value || !email.value || !textletter.value) {
+if (form) {
+  form.addEventListener('submit', function(evt) {
+    if (!login.value || !email.value || !textletter.value) {
       evt.preventDefault();
-      formframe.classList.remove("modal-error");
+      formframe.classList.remove('modal-error');
       formframe.offsetWidth = formframe.offsetWidth;
+<<<<<<< HEAD
       formframe.classList.add("modal-error");  
   }
 });
 
+=======
+      formframe.classList.add('modal-error');
+    }
+  });
+}
+>>>>>>> f51a8703c109c1fc10e23f8dd389d9dddb23216a
