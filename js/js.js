@@ -65,14 +65,7 @@ if (form) {
       evt.preventDefault();
       formframe.classList.remove('modal-error');
       formframe.offsetWidth = formframe.offsetWidth;
-<<<<<<< HEAD
-      formframe.classList.add("modal-error");  
-  }
-});
-
-=======
       formframe.classList.add('modal-error');
     }
   });
 }
->>>>>>> f51a8703c109c1fc10e23f8dd389d9dddb23216a
