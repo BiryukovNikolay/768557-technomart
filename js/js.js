@@ -66,6 +66,7 @@ form.addEventListener("submit", function(evt) {
       evt.preventDefault();
       formframe.classList.remove("modal-error");
       formframe.offsetWidth = formframe.offsetWidth;
-      formframe.classList.add("modal-error");
-    }});
+      formframe.classList.add("modal-error");  
+  }
+});
 
